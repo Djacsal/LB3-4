@@ -1,7 +1,7 @@
 # Лабораторная работв №3
 ### Цель работы: Изучить принципы работы web - приложений.
 #### Вариант №5: Ипотечный калькулятор
-![Image alt](https://github.com/Djacsal/LB3-4/blob/main/CMSXzU2kmM8.jpg)
+![Image alt](https://github.com/Djacsal/LB3-4/blob/main/3.jpg)
 
 # Лабораторная работв №4
 ### Цель работы: Изучить принципы работы unit тестов.
