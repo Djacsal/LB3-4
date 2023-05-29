@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ипотечный калькулятор</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 36px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		form {
+			width: 400px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		label {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		input[type="number"] {
+			font-size: 16px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			font-size: 18px;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		h2 {
+			font-size: 24px;
+			margin-top: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Ипотечный калькулятор</h1>
+	<form method="post">
+		<label for="loan_amount">Сумма кредита:</label>
+		<input type="number" id="loan_amount" name="loan_amount" required>
+
+		<label for="interest_rate">Процентная ставка:</label>
+		<input type="number" id="interest_rate" name="interest_rate" required>
+
+		<label for="loan_term">Срок кредита (лет):</label>
+		<input type="number" id="loan_term" name="loan_term" required>
+
+		<input type="submit" value="Проверить">
+	</form>
+
+	{% if monthly_payment %}
+		<h2>Ежемесячный плятёж: {{ monthly_payment }} ₽</h2>
+	{% endif %}
+</body>
+</html>
